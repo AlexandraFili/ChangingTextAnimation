@@ -1,0 +1,30 @@
+
+html,body{
+    height:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('./img/flash.jpg') no-repeat;
+    background-size: cover;
+    color: azure;
+    margin: 0;
+}
+.container{
+   padding: 7rem;
+   
+}
+.title{
+    font-size: 6rem;
+}
+.title .text-placeholder{
+    font-weight: bolder;
+}
+.text-placeholder::before{
+    content:"";
+    animation:changingText 5s ease-in infinite;
+}
+
+@keyframes changingText{
+    0%, 100%{content: 'Designing'}
+    25%, 100%{content: 'Coding'}
+    50%, 100%{content: 'Reading'}
+    75%, 100%{content: 'Travelling'}
+}
